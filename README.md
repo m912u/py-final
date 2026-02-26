@@ -15,6 +15,29 @@
 # Процесс обработки логов
 Для реализации скрипта использован паттерн проектирование Pipeline. Паттерн предполагает последовательное получение и обработку данных с передачей их между этапами. Реализован классов Pipeline и абстрактным классом этапа Stage.
 
+# Использование
+
+Настроить параметры окружения в .env:
+
+```
+API_KEY_VIRUSTOTAL=virustotal_api_key
+API_KEY_FIREWALL=firewall_api_key
+EMAIL_MAIL = "your_email@example.com"
+EMAIL_PASSWORD = "password"
+EMAIL_SMTP_SERVER = "smtp.example.local"
+EMAIL_SMTP_PORT = 25
+```
+
+Установить необходимые зависимости:
+``` bash
+pip install numpy pandas matplotlib requests python-dotenv
+```
+
+Запуск:
+``` bash
+python pipeline.py
+```
+
 ## Этап 1. Чтение и анализ лога Suricata
 Реализуется классом SuricataLogAnalyzerStage. На данном этапе прроизводится:
 - загрузка Suricata из файла в формате JSON
