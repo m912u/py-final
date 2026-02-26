@@ -1,0 +1,35 @@
+{
+  "192.168.7.221": {
+    "suspicious_ips": {
+      "total_requests": 25,
+      "alert_requests": 24,
+      "activity_threshold": true,
+      "has_alerts": true
+    },
+    "virustotal_ips": true,
+    "ips_for_block": "block_by_score",
+    "block_result": true
+  },
+  "192.168.9.31": {
+    "suspicious_ips": {
+      "total_requests": 23,
+      "alert_requests": 22,
+      "activity_threshold": true,
+      "has_alerts": true
+    },
+    "virustotal_ips": false,
+    "ips_for_block": "block_by_score",
+    "block_result": true
+  },
+  "192.168.1.155": {
+    "suspicious_ips": {
+      "total_requests": 1,
+      "alert_requests": 1,
+      "activity_threshold": false,
+      "has_alerts": true
+    },
+    "virustotal_ips": true,
+    "ips_for_block": "block_by_virustotal",
+    "block_result": true
+  }
+}

